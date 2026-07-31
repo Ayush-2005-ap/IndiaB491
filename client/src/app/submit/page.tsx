@@ -1,6 +1,38 @@
+"use client";
+
 import Link from 'next/link';
+import { useState } from 'react';
 
 export default function Page() {
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [message, setMessage] = useState('');
+
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    setIsSubmitting(true);
+    setMessage('');
+
+    const formData = new FormData(e.currentTarget);
+    try {
+      const response = await fetch('http://localhost:8080/api/submissions', {
+        method: 'POST',
+        body: formData,
+      });
+      const data = await response.json();
+      
+      if (response.ok) {
+        setMessage('Your story has been submitted successfully!');
+        (e.target as HTMLFormElement).reset();
+      } else {
+        setMessage(data.error || 'Failed to submit story.');
+      }
+    } catch (error) {
+      setMessage('Failed to connect to the server.');
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
+
   return (
     <>
       <div className="flex flex-col w-full">
@@ -49,23 +81,28 @@ export default function Page() {
 </div>
 </div>
 {/*  Form Component  */}
-<form className="lg:col-span-8 flex flex-col gap-16" id="submissionForm">
+<form className="lg:col-span-8 flex flex-col gap-16" id="submissionForm" onSubmit={handleSubmit}>
+{message && (
+  <div className={`p-4 font-body-md text-body-md ${message.includes('success') ? 'bg-green-100 text-green-800' : 'bg-red-100 text-red-800'}`}>
+    {message}
+  </div>
+)}
 {/*  Identity Group  */}
 <div className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-16">
 <div className="relative group">
 <label className="font-label-caps text-label-caps text-outline uppercase mb-2 block transition-colors group-focus-within:text-primary">Full Name</label>
-<input className="w-full bg-transparent border-b border-outline py-4 font-body-md text-body-md text-on-surface focus:outline-none focus:border-primary transition-all placeholder:text-outline-variant" placeholder="E.g. Dr. Amitabh Varma" type="text"/>
+<input name="fullName" required className="w-full bg-transparent border-b border-outline py-4 font-body-md text-body-md text-on-surface focus:outline-none focus:border-primary transition-all placeholder:text-outline-variant" placeholder="E.g. Dr. Amitabh Varma" type="text"/>
 </div>
 <div className="relative group">
 <label className="font-label-caps text-label-caps text-outline uppercase mb-2 block transition-colors group-focus-within:text-primary">Primary Location</label>
-<input className="w-full bg-transparent border-b border-outline py-4 font-body-md text-body-md text-on-surface focus:outline-none focus:border-primary transition-all placeholder:text-outline-variant" placeholder="City, State" type="text"/>
+<input name="location" className="w-full bg-transparent border-b border-outline py-4 font-body-md text-body-md text-on-surface focus:outline-none focus:border-primary transition-all placeholder:text-outline-variant" placeholder="City, State" type="text"/>
 </div>
 </div>
 {/*  Taxonomy Group  */}
 <div className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-16">
 <div className="relative group">
 <label className="font-label-caps text-label-caps text-outline uppercase mb-2 block transition-colors group-focus-within:text-primary">Economic Sector</label>
-<select defaultValue="" className="w-full bg-transparent border-b border-outline py-4 font-body-md text-body-md text-on-surface focus:outline-none focus:border-primary transition-all appearance-none cursor-pointer">
+<select name="sector" defaultValue="" className="w-full bg-transparent border-b border-outline py-4 font-body-md text-body-md text-on-surface focus:outline-none focus:border-primary transition-all appearance-none cursor-pointer">
 <option disabled value="">Select Sector</option>
 <option>Agriculture & Rural Life</option>
 <option>Manufacturing & Industry</option>
@@ -78,7 +115,7 @@ export default function Page() {
 </div>
 <div className="relative group">
 <label className="font-label-caps text-label-caps text-outline uppercase mb-2 block transition-colors group-focus-within:text-primary">Submission Format</label>
-<select defaultValue="" className="w-full bg-transparent border-b border-outline py-4 font-body-md text-body-md text-on-surface focus:outline-none focus:border-primary transition-all appearance-none cursor-pointer">
+<select name="format" defaultValue="" className="w-full bg-transparent border-b border-outline py-4 font-body-md text-body-md text-on-surface focus:outline-none focus:border-primary transition-all appearance-none cursor-pointer">
 <option disabled value="">Select Type</option>
 <option>Written Narrative</option>
 <option>Archival Photograph</option>
@@ -92,20 +129,20 @@ export default function Page() {
 {/*  Narrative Field  */}
 <div className="relative group">
 <label className="font-label-caps text-label-caps text-outline uppercase mb-2 block transition-colors group-focus-within:text-primary">The Narrative</label>
-<textarea className="w-full bg-transparent border-b border-outline py-4 font-body-md text-body-md text-on-surface focus:outline-none focus:border-primary transition-all placeholder:text-outline-variant resize-none" placeholder="Describe the memory, the item, or the historical context in detail..." rows="6"></textarea>
+<textarea name="narrative" className="w-full bg-transparent border-b border-outline py-4 font-body-md text-body-md text-on-surface focus:outline-none focus:border-primary transition-all placeholder:text-outline-variant resize-none" placeholder="Describe the memory, the item, or the historical context in detail..." rows={6}></textarea>
 </div>
 {/*  Upload Area  */}
-<div className="relative group border-2 border-dashed border-outline-variant p-12 flex flex-col items-center justify-center text-center cursor-pointer hover:bg-surface-container transition-colors" id="dropZone">
-<input className="hidden" id="fileInput" type="file"/>
+<div className="relative group border-2 border-dashed border-outline-variant p-12 flex flex-col items-center justify-center text-center cursor-pointer hover:bg-surface-container transition-colors" id="dropZone" onClick={() => document.getElementById('fileInput')?.click()}>
+<input name="file" className="hidden" id="fileInput" type="file"/>
 <span className="material-symbols-outlined text-4xl text-outline mb-4">upload_file</span>
 <p className="font-headline-sm text-headline-sm text-primary mb-2">Upload Archival Assets</p>
 <p className="font-caption text-caption text-on-surface-variant">Drag and drop high-resolution files (JPG, PDF, MP4 up to 50MB)</p>
 </div>
 {/*  Submit Button  */}
 <div className="flex justify-start pt-8">
-<button className="group relative px-12 py-5 bg-secondary text-on-secondary overflow-hidden transition-all hover:bg-on-secondary-container" type="submit">
+<button disabled={isSubmitting} className="group relative px-12 py-5 bg-secondary text-on-secondary overflow-hidden transition-all hover:bg-on-secondary-container disabled:opacity-50" type="submit">
 <span className="relative z-10 font-headline-sm text-headline-sm uppercase tracking-widest flex items-center gap-4">
-                Finalize Submission
+                {isSubmitting ? 'Submitting...' : 'Finalize Submission'}
                 <span className="material-symbols-outlined transition-transform group-hover:translate-x-2">arrow_right_alt</span>
 </span>
 </button>
