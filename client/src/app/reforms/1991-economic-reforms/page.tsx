@@ -6,29 +6,41 @@ export default function ReformPage() {
       <div className="flex flex-col w-full">
 {/*  Editorial Content Layout  */}
 <section className="w-full bg-surface pt-40 pb-24">
-<div className="max-w-[720px] mx-auto px-margin-mobile lg:px-0">
+<div className="w-full px-6 md:px-16 lg:px-24">
 {/*  Main Narrative  */}
 <div className="flex flex-col gap-12">
 <article className="prose prose-slate max-w-none">
-  <p className="font-body-lg text-body-lg text-on-surface leading-relaxed first-letter:text-7xl first-letter:font-headline-sm first-letter:mr-3 first-letter:float-left first-letter:text-primary">
-    The strategy of reforms introduced in India in July 1991 presented a mixture of macroeconomic stabilization and structural adjustment. It was guided by short-term and long-term objectives. Stabilization was necessary in the short run to restore balance of payments equilibrium and to control inflation. At the same time changing the structure of institutions themselves through reforms was equally important from long term point of view.
+  <p className="font-body-lg text-body-lg text-on-surface leading-relaxed">
+    <span className="float-left text-5xl md:text-6xl font-serif font-bold text-primary bg-surface-container border border-outline-variant px-5 py-3 mr-4 mt-2 rounded shadow-sm leading-none">T</span>
+    he strategy of reforms introduced in India in July 1991 presented a mixture of macroeconomic stabilization and structural adjustment. It was guided by short-term and long-term objectives. Stabilization was necessary in the short run to restore balance of payments equilibrium and to control inflation. At the same time changing the structure of institutions themselves through reforms was equally important from long term point of view.
   </p>
   <p className="font-body-lg text-body-lg text-on-surface mt-8 leading-relaxed">
     The new government moved urgently to implement a programme of macroeconomic stabilization through fiscal correction. Besides this, structural reforms were initiated in the field of trade, industry and the public sector.
   </p>
 
-  <h3 className="font-headline-md text-headline-md text-primary mt-12 mb-6">Objective of Reforms</h3>
-  <p className="font-body-lg text-body-lg text-on-surface leading-relaxed">
-    As per the Discussion Paper on Economic Reforms brought out by the Ministry of Finance in July 1993, the objectives of the reforms were:
-  </p>
+  <div className="mt-12 flex flex-col md:flex-row gap-8 items-start">
+    <div className="w-full md:w-[40%] flex flex-col gap-2 shrink-0">
+      <img src="/rao-singh.jpg" alt="PM PV Narasimha Rao with Finance Minister Manmohan Singh and others" className="w-full h-auto grayscale" />
+      <span className="font-caption text-caption text-on-surface-variant text-center">
+        PM PV Narasimha Rao with Finance Minister Manmohan Singh and others
+      </span>
+    </div>
+    
+    <div className="w-full md:w-[60%]">
+      <h3 className="font-headline-md text-headline-md text-primary mb-6">Objective of Reforms</h3>
+      <p className="font-body-lg text-body-lg text-on-surface leading-relaxed">
+        As per the Discussion Paper on Economic Reforms brought out by the Ministry of Finance in July 1993, the objectives of the reforms were:
+      </p>
 
-  <div className="my-12 relative">
-    <div className="absolute -left-8 top-0 text-secondary-fixed text-6xl font-headline-sm opacity-50">"</div>
-    <blockquote className="font-headline-md text-headline-md text-primary leading-tight border-l-2 border-secondary pl-8">
-      …to bring about rapid and sustained improvement in the quality of the people of India. Central to this goal is the rapid growth in incomes and productive employment… The only durable solution to the curse of poverty is sustained growth of incomes and employment… Such growth requires investment: in farms, in roads, in irrigation, in industry, in power and, above all, in people. And this investment must be productive. Successful and sustained development depends on continuing increases in the productivity of our capital, our land and our labour.<br/><br/>
-      Within a generation, the countries of East Asia have transformed themselves. China, Indonesia, Korea, Thailand and Malaysia today have living standards much above ours… What they have achieved, we must strive for.
-    </blockquote>
-    <cite className="block mt-4 font-label-caps text-label-caps text-on-surface-variant not-italic">— DISCUSSION PAPER ON ECONOMIC REFORMS, MINISTRY OF FINANCE (JULY 1993)</cite>
+      <div className="my-8 relative">
+        <div className="absolute -left-8 top-0 text-secondary-fixed text-6xl font-headline-sm opacity-50">"</div>
+        <blockquote className="font-headline-md text-headline-md text-primary leading-tight border-l-2 border-secondary pl-8">
+          …to bring about rapid and sustained improvement in the quality of the people of India. Central to this goal is the rapid growth in incomes and productive employment… The only durable solution to the curse of poverty is sustained growth of incomes and employment… Such growth requires investment: in farms, in roads, in irrigation, in industry, in power and, above all, in people. And this investment must be productive. Successful and sustained development depends on continuing increases in the productivity of our capital, our land and our labour.<br/><br/>
+          Within a generation, the countries of East Asia have transformed themselves. China, Indonesia, Korea, Thailand and Malaysia today have living standards much above ours… What they have achieved, we must strive for.
+        </blockquote>
+        <cite className="block mt-4 font-label-caps text-label-caps text-on-surface-variant not-italic">— DISCUSSION PAPER ON ECONOMIC REFORMS, MINISTRY OF FINANCE (JULY 1993)</cite>
+      </div>
+    </div>
   </div>
 
   <h3 className="font-headline-md text-headline-md text-primary mt-12 mb-6">Major Steps in the 1991 Reforms</h3>

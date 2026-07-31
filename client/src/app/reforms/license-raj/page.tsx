@@ -5,7 +5,7 @@ export default function ReformPage() {
     <>
       <div className="flex flex-col w-full">
         {/*  Header Section  */}
-        <section className="max-w-[1120px] mx-auto w-full px-margin-mobile lg:px-0 pt-16 pb-12">
+        <section className="w-full px-6 md:px-16 lg:px-24 pt-16 pb-12">
           <div className="flex flex-col md:flex-row md:items-end justify-between gap-4">
             <div className="flex flex-col">
               <span className="font-label-caps text-label-caps text-secondary mb-4 tracking-[0.2em] uppercase">The Era of Control</span>
@@ -19,12 +19,13 @@ export default function ReformPage() {
           <div className="w-full h-hairline bg-secondary-fixed-dim mt-8 opacity-40"></div>
         </section>
         {/*  Main Editorial Content  */}
-        <section className="max-w-[1120px] mx-auto w-full px-margin-mobile lg:px-0 grid grid-cols-12 gap-gutter">
+        <section className="w-full px-6 md:px-16 lg:px-24 flex flex-col gap-12">
           {/*  Left Column: Editorial Content  */}
-          <article className="col-span-12 lg:col-span-8 lg:col-start-3 max-w-[680px] mx-auto">
+          <article className="w-full">
             <div className="font-body-lg text-body-lg text-on-surface space-y-8 leading-relaxed">
-  <p className="first-letter:text-7xl first-letter:font-display-lg first-letter:mr-3 first-letter:float-left first-letter:text-primary">
-    In 1947, India was a new country racked by pains of the Partition and the dire poverty of her people. Nonetheless, the Indian Constitution bestowed the right to vote to every adult, making her the first democracy to guarantee universal adult franchise at birth. The Constitution protected basic personal freedoms of movement, assembly, conscience and expression. So in terms of political and personal freedoms, India was a constitutional republic or a liberal democracy from her birth. This was a great achievement.
+  <p className="font-body-lg text-body-lg text-on-surface leading-relaxed">
+    <span className="float-left text-5xl md:text-6xl font-serif font-bold text-primary bg-surface-container border border-outline-variant px-5 py-3 mr-4 mt-2 rounded shadow-sm leading-none">I</span>
+    n 1947, India was a new country racked by pains of the Partition and the dire poverty of her people. Nonetheless, the Indian Constitution bestowed the right to vote to every adult, making her the first democracy to guarantee universal adult franchise at birth. The Constitution protected basic personal freedoms of movement, assembly, conscience and expression. So in terms of political and personal freedoms, India was a constitutional republic or a liberal democracy from her birth. This was a great achievement.
   </p>
   <p>
     For economic arrangements, the Constitutional Assembly considered the idea of declaring India a socialist nation. However it rejected the idea, largely on the argument by Dr Ambedkar that economic system should be left free to adjust to the changing demands of the people and the Assembly should not bind the people to any one type economic system forever.
@@ -104,7 +105,7 @@ export default function ReformPage() {
         </section>
         {/*  Related Content Section  */}
         <section className="w-full bg-surface-container-lowest mt-32 py-24 border-t border-outline-variant">
-          <div className="max-w-[1120px] mx-auto px-margin-mobile lg:px-0">
+          <div className="w-full px-6 md:px-16 lg:px-24">
             <div className="flex items-center gap-4 mb-12">
               <div className="h-hairline w-12 bg-secondary"></div>
               <h3 className="font-label-caps text-label-caps tracking-[0.3em] uppercase text-primary">From the Archives</h3>

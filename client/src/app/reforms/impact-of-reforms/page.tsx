@@ -6,8 +6,8 @@ export default function ReformPage() {
       <div className="flex flex-col w-full">
 {/*  Section: Editorial Header  */}
 <section className="relative w-full border-b border-outline-variant py-24 lg:py-32 overflow-hidden">
-<div className="max-w-[1120px] mx-auto px-margin-mobile lg:px-0">
-<div className="flex flex-col items-start max-w-3xl">
+<div className="w-full px-6 md:px-16 lg:px-24">
+<div className="flex flex-col items-start w-full">
 <span className="font-label-caps text-label-caps text-secondary mb-6 tracking-[0.2em] uppercase">Special Report / Vol. IV</span>
 <h1 className="font-display-lg text-display-lg-mobile lg:text-display-lg text-primary mb-4 leading-none">
           Impact of Reforms
@@ -18,13 +18,10 @@ export default function ReformPage() {
 </div>
 </div>
 </div>
-{/*  Decorative faint vertical text  */}
-<div className="absolute right-margin-desktop top-1/2 -translate-y-1/2 hidden lg:block opacity-10">
-<span className="font-label-caps text-[120px] leading-none [writing-mode:vertical-rl] select-none text-primary">1991—2024</span>
-</div>
+
 </section>
 {/*  Section: Long-form Content & Navigation  */}
-<section className="max-w-[1120px] mx-auto px-margin-mobile lg:px-0 py-16 lg:py-24 grid grid-cols-1 lg:grid-cols-12 gap-gutter">
+<section className="w-full px-6 md:px-16 lg:px-24 py-16 lg:py-24 grid grid-cols-1 lg:grid-cols-12 gap-gutter">
 {/*  Sidebar Navigation / Meta  */}
 <aside className="lg:col-span-3 flex flex-col gap-12 order-2 lg:order-1">
 <div className="flex flex-col gap-4 border-l border-outline-variant pl-6">
@@ -45,8 +42,9 @@ export default function ReformPage() {
 {/*  Main Editorial Text  */}
 <article className="lg:col-span-8 lg:col-start-5 order-1 lg:order-2">
 <div className="font-body-lg text-body-lg text-on-surface-variant leading-relaxed space-y-8" style="font-family: Georgia, serif;">
-<p className="first-letter:text-7xl first-letter:font-headline-md first-letter:float-left first-letter:mr-4 first-letter:text-primary first-letter:mt-2">
-          The structural adjustments of 1991 were not merely a shift in fiscal policy, but a profound recalibration of the Indian social contract. For four decades, the Indian economy had been defined by the "Permit Raj"—a complex web of licenses and regulations that stifled entrepreneurial spirit while maintaining a fragile equilibrium of self-reliance.
+<p className="font-body-lg text-body-lg text-on-surface leading-relaxed">
+<span className="float-left text-5xl md:text-6xl font-serif font-bold text-primary bg-surface-container border border-outline-variant px-5 py-3 mr-4 mt-2 rounded shadow-sm leading-none">T</span>
+he structural adjustments of 1991 were not merely a shift in fiscal policy, but a profound recalibration of the Indian social contract. For four decades, the Indian economy had been defined by the "Permit Raj"—a complex web of licenses and regulations that stifled entrepreneurial spirit while maintaining a fragile equilibrium of self-reliance.
         </p>
 <div className="pl-12 lg:pl-16 py-8 border-l-2 border-secondary/30 relative">
 <span className="material-symbols-outlined absolute -left-4 top-4 text-secondary/40 text-4xl">format_quote</span>
@@ -74,7 +72,7 @@ export default function ReformPage() {
 </section>
 {/*  Section: Related Archival Content  */}
 <section className="bg-surface-container-low py-24 border-t border-outline-variant">
-<div className="max-w-[1120px] mx-auto px-margin-mobile lg:px-0">
+<div className="w-full px-6 md:px-16 lg:px-24">
 <div className="flex items-center justify-between mb-16">
 <h3 className="font-headline-sm text-headline-sm text-primary">Related from the Archive</h3>
 <div className="h-px flex-grow mx-8 bg-outline-variant"></div>
@@ -119,7 +117,7 @@ export default function ReformPage() {
 </section>
 {/*  Section: Bottom Navigation  */}
 <section className="py-16 border-t border-outline-variant">
-<div className="max-w-[1120px] mx-auto px-margin-mobile lg:px-0 flex justify-center">
+<div className="w-full px-6 md:px-16 lg:px-24 flex justify-center">
 <a className="group relative py-4 px-12 border border-primary overflow-hidden" href="#">
 <div className="absolute inset-0 bg-primary translate-y-full group-hover:translate-y-0 transition-transform duration-300"></div>
 <span className="relative font-label-caps text-label-caps text-primary group-hover:text-on-primary transition-colors tracking-[0.3em]">

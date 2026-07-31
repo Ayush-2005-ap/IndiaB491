@@ -14,7 +14,7 @@ export default function ReformPage() {
         <section className="w-full bg-surface pt-8 pb-24 px-margin-mobile lg:px-0">
           
             {/*  Center Column: The Story  */}
-            <div className="max-w-[720px] mx-auto flex flex-col gap-12">
+            <div className="w-full px-6 md:px-16 lg:px-24 flex flex-col gap-12">
               <div className="space-y-8">
                 <h1 className="font-display-lg text-4xl text-primary font-bold">1991 Crisis</h1>
                 <p className="font-body-lg text-body-lg text-on-surface leading-relaxed">
@@ -135,7 +135,7 @@ export default function ReformPage() {
         </section>
         {/*  Section 3: Related Archival Records  */}
         <section className="w-full bg-surface-container-low py-24 px-margin-mobile lg:px-0 border-y border-outline-variant">
-          <div className="max-w-[1120px] mx-auto">
+          <div className="w-full px-6 md:px-16 lg:px-24">
             <div className="flex items-end justify-between mb-16">
               <div>
                 <span className="font-label-caps text-label-caps text-secondary uppercase tracking-widest block mb-2">Exhibits</span>
@@ -173,7 +173,7 @@ export default function ReformPage() {
         </section>
         {/*  Section 4: Narrative Navigation  */}
         <section className="w-full py-32 px-margin-mobile lg:px-0">
-          <div className="max-w-[1120px] mx-auto flex flex-col items-end">
+          <div className="w-full px-6 md:px-16 lg:px-24 flex flex-col items-end">
             <div className="w-full lg:w-1/2 text-right">
               <span className="font-label-caps text-label-caps text-outline uppercase tracking-widest block mb-4">Up Next</span>
               <a className="group block" data-path="reforms-1991" href="#">
