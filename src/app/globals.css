@@ -58,14 +58,14 @@
   --spacing-margin-mobile: 24px;
   --spacing-gutter: 32px;
   --spacing-hairline: 1px;
-  --font-headline-sm: Fraunces;
-  --font-caption: Source Serif 4;
-  --font-display-lg: Fraunces;
-  --font-display-lg-mobile: Fraunces;
-  --font-label-caps: Source Serif 4;
-  --font-body-lg: Source Serif 4;
-  --font-headline-md: Fraunces;
-  --font-body-md: Source Serif 4;
+  --font-headline-sm: "Space Grotesk", sans-serif;
+  --font-caption: "Space Grotesk", sans-serif;
+  --font-display-lg: "Space Grotesk", sans-serif;
+  --font-display-lg-mobile: "Space Grotesk", sans-serif;
+  --font-label-caps: "Space Grotesk", sans-serif;
+  --font-body-lg: "Space Grotesk", sans-serif;
+  --font-headline-md: "Space Grotesk", sans-serif;
+  --font-body-md: "Space Grotesk", sans-serif;
 }
 
 @layer utilities {

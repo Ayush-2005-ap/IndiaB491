@@ -7,7 +7,7 @@ export default function ReformPage() {
 {/*  Hero Section with Immersive Archival Backdrop  */}
 <section className="relative w-full h-[716px] flex items-end overflow-hidden">
 <div className="absolute inset-0 bg-primary/40 mix-blend-multiply z-10"></div>
-<div className="absolute inset-0 z-0" data-alt="A cinematic, desaturated archival photograph of the Indian Parliament building in New Delhi, 1991. The image has a heavy grain, high contrast, and a sepia-tinted monochrome palette. Soft light filters through monsoon clouds, casting long shadows across the stone architecture. The aesthetic is somber, historic, and evokes a sense of monumental change." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDkiD3IwxcKKMrPR9re0b8YI9VD1jP0Fn8tVBGj6Fy_StbLTeKBBAH112Vi7BILI6Jm4fl2h8w05jgGlImoLyet-e0WknRBz41LPTk69LNg9_FPDSmlbyAoXfp4eWD4wItET4YBeK0cgERxqCbVeuhWa0gos6aTMQpCFRrcRRb0C3kNIDSmDuTbid_yDdhhptGKJRxwzs5Ml2avvGEE72sYkfvT4vuuyZTuFw2vnsRHXTC8HogIsvJW__vDkTuYM6Hph1uAdDqEOL8')"></div>
+<div className="absolute inset-0 z-0" data-alt="A cinematic, desaturated archival photograph of the Indian Parliament building in New Delhi, 1991. The image has a heavy grain, high contrast, and a sepia-tinted monochrome palette. Soft light filters through monsoon clouds, casting long shadows across the stone architecture. The aesthetic is somber, historic, and evokes a sense of monumental change." style={{ backgroundImage: "url('https://lh3.googleusercontent.com/aida-public/AB6AXuDkiD3IwxcKKMrPR9re0b8YI9VD1jP0Fn8tVBGj6Fy_StbLTeKBBAH112Vi7BILI6Jm4fl2h8w05jgGlImoLyet-e0WknRBz41LPTk69LNg9_FPDSmlbyAoXfp4eWD4wItET4YBeK0cgERxqCbVeuhWa0gos6aTMQpCFRrcRRb0C3kNIDSmDuTbid_yDdhhptGKJRxwzs5Ml2avvGEE72sYkfvT4vuuyZTuFw2vnsRHXTC8HogIsvJW__vDkTuYM6Hph1uAdDqEOL8')" }}></div>
 <div className="relative z-20 max-w-[1120px] mx-auto w-full px-margin-mobile lg:px-0 pb-20">
 <div className="max-w-3xl">
 <span className="font-label-caps text-label-caps text-primary-fixed mb-4 block tracking-[0.2em] uppercase">The Turning Point</span>
@@ -135,7 +135,7 @@ export default function ReformPage() {
 </div>
 </section>
 {/*  Reading Progress Indicator  */}
-<div className="fixed top-20 left-0 h-1 bg-secondary z-[60] transition-all duration-150" id="progress-bar" style="width: 0%"></div>
+<div className="fixed top-20 left-0 h-1 bg-secondary z-[60] transition-all duration-150" id="progress-bar" style={{ width: "0%" }}></div>
 {/*  Related Content Cards (Bottom Mosaic)  */}
 <section className="w-full bg-surface-container-low py-24 border-t border-outline-variant">
 <div className="max-w-[1120px] mx-auto px-margin-mobile lg:px-0">

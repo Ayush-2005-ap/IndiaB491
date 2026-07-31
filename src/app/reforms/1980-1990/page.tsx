@@ -31,30 +31,56 @@ export default function ReformPage() {
 <article className="space-y-12">
 <div className="space-y-6">
 <p className="font-body-lg text-body-lg text-on-surface leading-relaxed first-letter:text-7xl first-letter:font-display-lg first-letter:float-left first-letter:mr-4 first-letter:text-primary">
-            The decade of the 1980s in India was characterized by a paradoxical blend of technological aspiration and bureaucratic stagnation. As the world moved toward a digital revolution, India remained cocooned within the intricate layers of the License Raj—a system where the state dictated production quotas, import limits, and industrial direction with an iron hand.
+            The GDP growth rate improved (from an average of 2.9 percent in 1970s to 5.6 percent in 1980s) during the 1980s. This was primarily due to two reasons: Liberalisation of industry and trade (reforms of 1980s), and borrowing from abroad alongside rising government expenditure at home.
           </p>
 <p className="font-body-lg text-body-lg text-on-surface leading-relaxed">
-            Infrastructure was failing to keep pace with a growing population. Power outages were a daily ritual, and the waitlist for a simple landline telephone connection could span several years. Yet, beneath the surface of this slow-moving economy, the first seeds of change were being sown. The introduction of the Maruti 800 and the expansion of color television for the 1982 Asian Games hinted at a middle class beginning to demand more from its government.
+            During the 1980s, the investment-to-GDP ratio rose—investment went from about 19 percent of GDP in the early 1970s to nearly 25 percent in the early 1980s—exclusively in the public sector, while it fell in the private sector. The external borrowing helped bridge the considerable gap between exports and imports and raise the total GDP growth rate. Thus, foreign borrowing made a positive contribution to growth. However, it also led to a rapid accumulation of foreign debt, which rose from USD 20.6 billion in 1980–81 to USD 64.4 billion in 1989–90.
+          </p>
+<p className="font-body-lg text-body-lg text-on-surface leading-relaxed">
+            From the fiscal year 1979-80, India started facing the Balance of Payment (BoP) crisis. By the end of the 6th five-year plan in 1985, India’s BoP deficit rose to Rs. 11,384 crores (from a BoP surplus of Rs. 3082 crores during the 5th five-year plan ending in 1978). The second oil shock of 1979 occurred due to decreased oil output in the wake of the Iranian revolution, pushing up oil prices.
           </p>
 </div>
 {/*  Pull Quote  */}
 <div className="py-12 border-y border-outline-variant/50 my-16">
 <blockquote className="font-headline-md text-headline-md italic text-primary text-center lg:px-12 leading-snug">
-            “In those days, entrepreneurship was not about innovation; it was about navigating the labyrinth of New Delhi's corridors.”
+            “In 1980, following the outbreak of the Iran-Iraq War, oil production in Iran nearly stopped... pushing prices further up. The value of imports for India almost doubled between 1978-79 and 1981-82.”
           </blockquote>
-<cite className="block text-center mt-6 font-label-caps text-label-caps text-secondary uppercase tracking-widest">— Archival Entry, 1984</cite>
 </div>
 <div className="space-y-6">
+<p className="font-body-lg text-body-lg text-on-surface leading-relaxed">
+            From 1980 to 1983, there was a global recession and India’s exports suffered. To offset the BoP, a number of measures were taken, including external assistance in the form of loans and aids, withdrawal of SDR (Special Drawing Rights, the currency of the IMF), and borrowing from the IMF under the extended facility arrangement. During the mid-1980s, the BoP issue occupied a central position in India’s macroeconomic management policy.
+          </p>
 <div className="relative w-full aspect-[16/9] mb-12 group overflow-hidden">
 <div className="absolute inset-0 border border-primary p-4 z-10 pointer-events-none"></div>
 <img className="w-full h-full object-cover filter grayscale contrast-125 opacity-90 group-hover:scale-105 transition-transform duration-700" data-alt="A desaturated, high-contrast archival photograph of a busy street in 1980s Mumbai. The image features vintage Premier Padmini cars, old-style billboard advertisements for Air India and HMT watches, and people in period-appropriate attire. The lighting is cinematic with long shadows, captured in a grainy, film-stock aesthetic that feels like a preserved historical document." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAMA_YTctgxmS5vBX1U7t1R8Jb2kshxcinM6Uz_pG7LgjMrfYVuMP8NNX5HNwY_6tY05XUAf8768HBhGZSUr22eizptsE8bDUtHv7oTZLLxYx8KYeXxSbEO5U2lU1TiZidJ20M7ypDUIi1uID2-eVuCC0Pku8tUUAkUOATlVaAqsX60PE3VyPBO1pjpqE1wXDv5VF4JM4Y4bZnAa8WnT-0omeZLsKo41WrmVgndIphrhby1H1QU1HdSLQILmiDob5kPNrUdZevfLo4"/>
 <div className="absolute bottom-6 right-6 bg-surface px-3 py-1 font-label-caps text-[10px] z-20">PLATE NO. 82-A</div>
 </div>
-<p className="font-body-lg text-body-lg text-on-surface leading-relaxed">
-            By the late 80s, the fiscal situation began to deteriorate. Short-term borrowing increased as the government struggled to maintain its subsidies and defense spending. The global oil shock following the Gulf crisis served as the final catalyst. India's foreign exchange reserves plummeted to a point where they could barely cover two weeks of essential imports.
+<h3 className="font-headline-md text-primary mt-8 mb-4">Major Reforms of the 1980s</h3>
+<p className="font-body-lg text-body-lg text-on-surface leading-relaxed mb-4">
+            Broadly, the reforms of the 1980s, which were largely in place by early 1988, can be divided into five categories (India in the 1980s and 1990s, Arvind Panagariya):
+          </p>
+<ul className="list-disc pl-6 space-y-4 font-body-lg text-body-lg text-on-surface leading-relaxed">
+            <li>
+              <strong>First, the OGL (Open General License List) was steadily expanded:</strong> The inclusion of an item was usually accompanied by an “exemption”, amounting to a reduction in import tariff. Capital goods in the OGL increased from 79 in 1976 to 1,329 in April 1990.
+            </li>
+            <li>
+              <strong>Second, decline in the share of canalised imports:</strong> Canalisation (monopoly rights of the government for importing certain items) declined from 67% to 27% of total imports between 1980–81 and 1986–87. This was due to increased domestic production of POL, the Green Revolution's success, and decanalisation of various items.
+            </li>
+            <li>
+              <strong>Third, export incentives were introduced:</strong> Especially after 1985, replenishment licenses (REP) were given to exporters. These could be freely traded on the market and directly relaxed constraints on some imports.
+            </li>
+            <li>
+              <strong>Fourth, relaxation of industrial controls:</strong> This included foreign exchange availability considerations and removing extra layers of regulation on imports.
+            </li>
+            <li>
+              <strong>Fifth, setting the exchange rate:</strong> The exchange rate was set at a level that reduced the bias against traded goods. It steadily depreciated from 12.36 rupees to a dollar in 1985 to 17.50 rupees in 1990.
+            </li>
+          </ul>
+<p className="font-body-lg text-body-lg text-on-surface leading-relaxed mt-8">
+            Towards the end of 1980s, despite these measures, external debt was rising. While the borrowing helped the economy grow, it was also pushing the country steadily towards a crash. High current expenditures proved unsustainable, manifesting in extremely large fiscal deficits.
           </p>
 <p className="font-body-lg text-body-lg text-on-surface leading-relaxed">
-            Gold, the ultimate symbol of Indian security, was eventually airlifted to London and Zurich as collateral. It was a moment of national humility that cleared the path for the radical structural shifts of 1991. The era of 'business as usual' was coming to a chaotic, inevitable end.
+            These factors led to a buildup of very substantial public debt with interest payments accounting for a large proportion of government revenues. They inevitably fed into the current account deficits (CAD), which kept rising steadily until they reached 3.5 percent of GDP and 43.8 percent of exports in 1990–91. The outcome of these developments was the June 1991 crisis.
           </p>
 </div>
 </article>
